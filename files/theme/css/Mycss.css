@@ -1,0 +1,16 @@
+.MyCss {
+    width: 100%;
+    height: 40vh;
+    background: #21007F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WorkinOnIt {
+    display: flex;
+    width: 90%;
+    /* align-items: center; */
+    height: 50%;
+    justify-content: space-between;
+}

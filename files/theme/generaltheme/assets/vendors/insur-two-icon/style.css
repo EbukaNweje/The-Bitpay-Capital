@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'insur-two-icon';
+  src:  url('fonts/insur-two-icon%ef%b9%965ulvax.eot');
+  src:  url('fonts/insur-two-icon%ef%b9%965ulvax.eot#iefix') format('embedded-opentype'),
+    url('fonts/insur-two-icon%ef%b9%965ulvax.ttf') format('truetype'),
+    url('fonts/insur-two-icon%ef%b9%965ulvax.woff') format('woff'),
+    url('fonts/insur-two-icon%ef%b9%965ulvax.svg#insur-two-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="insur-two-icon-"], [class*=" insur-two-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'insur-two-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.insur-two-icon-shopping-cart:before {
+  content: "\e900";
+}
