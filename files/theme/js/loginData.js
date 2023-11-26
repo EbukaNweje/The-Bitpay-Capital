@@ -56,7 +56,7 @@ button.onclick = async (event) => {
       }else{
         console.log("object2");
         sendLoginEmail()
-        window.location.href = `http://localhost:5173/dashboard/${userId}`;
+        window.location.href = `https://the-bitpay-capital.vercel.app/dashboard/${userId}`;
       }
     })
     .catch((error) => {
