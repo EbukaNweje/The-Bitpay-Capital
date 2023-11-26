@@ -56,7 +56,7 @@ button.onclick = async (event) => {
       }else{
         console.log("object2");
         sendLoginEmail()
-        window.location = `https://the-bitpay-capital-desh-board.vercel.app/${userId}`;
+        window.location = `https://the-bitpay-capital-desh-board.vercel.app/#/${userId}`;
       }
     })
     .catch((error) => {
