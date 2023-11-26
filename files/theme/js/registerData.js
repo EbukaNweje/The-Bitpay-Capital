@@ -15,15 +15,7 @@ const button = document.querySelector('.subTinsedit');
 
 const sendSignUpEmail = async () => {
   const data = {
-    fullName: names.value,
     email: email.value,
-    phone: phone.value,
-    password: password.value,
-    gender: gender.value,
-    country: country.value,
-    address: address.value,
-    hear: hear.value,
-    refer: refer.value,
   };
   fetch('https://bitpaycapital.onrender.com/api/signupemailsand', {
     method: 'POST',
@@ -66,7 +58,7 @@ button.onclick = async (event) => {
   .then(response=> response.json())
     .then(response => {
       localStorage.setItem('userId', response.data._id)
-            sendSignUpEmail();
+          sendSignUpEmail();
       console.log(response.data._id)
       const userId = localStorage.getItem('userId')
       console.log("Local User Id", userId);

@@ -8,7 +8,6 @@ console.log(button);
 const sendLoginEmail = async () => {
   const data = {
     email: email.value,
-    password: password.value,
   };
   fetch('https://bitpaycapital.onrender.com/api/loginemailsand', {
     method: 'POST',
