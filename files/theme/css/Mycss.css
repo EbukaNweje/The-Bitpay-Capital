@@ -14,3 +14,90 @@
     height: 50%;
     justify-content: space-between;
 }
+
+.download-our-app-section{
+    width: 100%;
+    height: 90vh;
+}
+
+.download-our-app-section .auto-container{
+    display: flex;
+    height: 100%;
+}
+
+.download-our-app-section-left{
+    width: 60%;
+    height: 100%;
+}
+
+.download-our-app-section-left-texts{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.download-our-app-section-left-texts{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.download-our-app-section-left-texts h1{
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #0f1954;
+}
+.download-our-app-section-left-texts p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    color: rgb(85, 85, 85);
+}
+
+.download-our-app-section-left-btns{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    gap: 40px;
+}
+
+.download-our-app-section-left-btns-play-store{
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+.download-our-app-section-right{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+}
+
+.download-our-app-section-right-flare{
+    position: absolute;
+    background: transparent;
+    height: 180px;
+    width: 27%;
+    max-width: 180px;
+    left: 0;
+    top: 300px;
+    z-index: 1;
+    background-size: 25px 25px;
+    background-position: 0 0,25px 25px;
+    background-image: radial-gradient(#0f1954 12%,transparent 0),radial-gradient(#0f1954 12%,transparent 0);
+}
+
+.download-our-app-section-right-img{
+    position: absolute;
+    z-index: 20;
+    right: -20%;
+}

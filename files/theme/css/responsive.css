@@ -986,7 +986,37 @@
 	.rtl .news-detail .inner-box .info-content .post-info li:last-child{
 		margin-right:0px;
 	}
+
+		.download-our-app-section {
+			width: 100%;
+			height: 60vh !important;
+		}
 	
+		.download-our-app-section-left {
+			width: 100% !important;
+			height: 100%;
+		}
+	
+		.download-our-app-section-left-texts {
+			width: 100%;
+			height: 80% !important;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 15px !important;
+		}
+	
+		.download-our-app-section-left-btns {
+			gap: 20px !important;
+		}
+	
+		.download-our-app-section-right {
+			width: 40%;
+			height: 100%;
+			position: relative;
+			padding: 30px;
+			display: none;
+		}
 	
 	
 }

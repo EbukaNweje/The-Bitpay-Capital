@@ -3,9 +3,9 @@
     $("#ref-me").submit(function(e){
          e.preventDefault();
          let $formD = $(this).serialize();
-         let but = $(".ref-sub");
-           but.prop('disabled',true).html('Please wait...');
-         callAjaxApi(but,$alertme,'general',$formD,'Sent');
+         // let but = $(".ref-sub");
+         //   but.prop('disabled',true).html('Please wait...');
+         // callAjaxApi(but,$alertme,'general',$formD,'Sent');
     })
    
    $plan = $("#plans");
@@ -64,25 +64,21 @@
                     break;
                     case 'Submit':
                         let regBut = $(".subTins");
-                         let mform = new FormData();
-                         let fileData = document.getElementById('files').files[0]
-                         mform.append('names',$("#names").val());
-                         mform.append('email',$("#email").val());
-                         mform.append('gender',$("#gender").val());
-                         mform.append('country',$("#country").val());
-                         mform.append('pass1',$("#pass1").val());
-                         mform.append('pass2',$("#pass2").val());
-                         mform.append('address',$("#address").val());
-                         mform.append('phone',$("#phone").val());
-                         mform.append('plan',$("#plan").val());
-                         mform.append('files',fileData);
-                         mform.append('authType',$("#authType").val());
-                         mform.append('refer',$("#refer").val());
-                         mform.append('hear',$("#hear").val());
-
-                        regBut.prop('disabled',true).html('Please wait...');
-                        callAjaxApi(regBut,$alertme,'upload-image',mform,'Sign Up');
-                     break;
+                        //  let mform = new FormData();
+                        //  let fileData = document.getElementById('files').files[0]
+                        //  mform.append('names',$("#names").val());
+                        //  mform.append('email',$("#email").val());
+                        //  mform.append('gender',$("#gender").val());
+                        //  mform.append('country',$("#country").val());
+                        //  mform.append('pass1',$("#pass1").val());
+                        //  mform.append('pass2',$("#pass2").val());
+                        //  mform.append('address',$("#address").val());
+                        //  mform.append('phone',$("#phone").val());
+                        //  mform.append('plan',$("#plan").val());
+                        //  mform.append('files',fileData);
+                        //  mform.append('authType',$("#authType").val());
+                        //  mform.append('refer',$("#refer").val());
+                        //  mform.append('hear',$("#hear").val());
               }
       });
 
@@ -95,48 +91,48 @@
       });
 
 
-      $("#loginUser").submit(function(e){
-            e.preventDefault();
-             let $buts = $(".logintins");
-              let formDatas = $(this).serialize();
-               $alertme.hide();
-               $buts.prop('disabled',true).html('Please wait...');
-              callAjaxApi($buts,$alertme,'general',formDatas,'Sign In');
-      })
+      // $("#loginUser").submit(function(e){
+      //       e.preventDefault();
+      //        let $buts = $(".logintins");
+      //         let formDatas = $(this).serialize();
+      //          $alertme.hide();
+      //          $buts.prop('disabled',true).html('Please wait...');
+      //         callAjaxApi($buts,$alertme,'general',formDatas,'Sign In');
+      // })
 
-function callAjaxApi($button,$notify,$type,$formData,$txt){
-        switch($type){
-             case 'general':
-                 $.ajax({
-                    url:link+'control',
-                    type:'POST',
-                    data:$formData,
-                    success:function(res){
-                        setTimeout(function(){
-                                $notify.html(alertUser('info',res)).show();
-                                $button.prop('disabled',false).html($txt);
-                        },2000);    
-                    }
-                 });
-                break;
-                case 'upload-image':
-                    $.ajax({
-                        url:link+'control',
-                        type:'POST',
-                        data:$formData,
-                        cache: false,
-                        processData: false,
-                        contentType: false,
-                        success:function(res){
-                            setTimeout(function(){
-                                $notify.html(alertUser('info',res)).show();
-                                $button.prop('disabled',false).html($txt);
-                            },2000); 
-                        }
-                     });
-                    break;
-        }
-}
+// function callAjaxApi($button,$notify,$type,$formData,$txt){
+//         switch($type){
+//              case 'general':
+//                  $.ajax({
+//                     url:link+'control',
+//                     type:'POST',
+//                     data:$formData,
+//                     success:function(res){
+//                         setTimeout(function(){
+//                                 $notify.html(alertUser('info',res)).show();
+//                                 $button.prop('disabled',false).html($txt);
+//                         },2000);    
+//                     }
+//                  });
+//                 break;
+//                 case 'upload-image':
+//                     $.ajax({
+//                         url:link+'control',
+//                         type:'POST',
+//                         data:$formData,
+//                         cache: false,
+//                         processData: false,
+//                         contentType: false,
+//                         success:function(res){
+//                             setTimeout(function(){
+//                                 $notify.html(alertUser('info',res)).show();
+//                                 $button.prop('disabled',false).html($txt);
+//                             },2000); 
+//                         }
+//                      });
+//                     break;
+//         }
+// }
 
 $("#with-amt").keyup(function(){
       let uks = $(this).val();
