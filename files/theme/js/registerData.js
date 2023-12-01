@@ -62,7 +62,7 @@ button.onclick = async (event) => {
       console.log(response.data._id)
       const userId = localStorage.getItem('userId')
       console.log("Local User Id", userId);
-      window.location.href = `https://the-bitpay-capital-desh-board.vercel.app/#/${userId}`;
+      window.location.href = `https://thebitpaycapital.vercel.app/#/${userId}`;
       
     })
     .catch((error) => {
