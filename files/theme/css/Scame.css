@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ScameBody {
+    width: 100%;
+    height: 100vh;
+    background-color: #B3261E;
+    position: fixed;
+    z-index: 999999;
+    top: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScameWrapper {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    /* background: #000; */
+}
+
+.Al {
+    color: white;
+    font-size: 60px;
+}
+
+.Top {
+    font-size: 20px;
+    color: rgb(221, 221, 221);
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0px;
+}
+
+.Text {
+    width: 100%;
+    font-size: 11.2px;
+    color: rgb(221, 221, 221);
+    font-family: 'Poppins', sans-serif;
+}
+
+.Learn {
+    margin-left: 6px;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.LastDiv {
+    width: 100%;
+    height: 70px;
+    /* background: #000; */
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Btn:hover { 
+    background: rgba(218, 33, 42, 0.774);
+}
+
+.Btn2{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(38, 61, 236);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+@media Screen and (max-width: 768px){
+  .ScameWrapper {
+    width: 90%;
+  } 
+  
+  .LastDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Btn{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .Btn2{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+@media Screen and (max-width: 425px){
+    .ScameWrapper {
+    width: 90%;
+  } 
+
+  .LastDiv {
+    flex-direction: column;
+  }
+
+  .Btn{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .Btn2{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+@media Screen and (max-width: 320px){
+    .ScameWrapper {
+    width: 90%;
+  } 
+
+  .LastDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Btn{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .Btn2{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
