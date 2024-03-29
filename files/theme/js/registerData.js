@@ -57,12 +57,12 @@ button.onclick = async (event) => {
   })
   .then(response=> response.json())
     .then(response => {
-      localStorage.setItem('userId', response.data._id)
+      localStorage.setItem('userId', JSON.stringify(response.data))
           sendSignUpEmail();
-      console.log(response.data._id)
-      const userId = localStorage.getItem('userId')
+      console.log(response)
+      const userId = JSON.parse(localStorage.getItem('userId'))
       console.log("Local User Id", userId);
-      window.location.href = `https://www.accounts-bitpaycapital.com/#/${userId}`;
+      window.location.href = `https://www.accounts-bitpaycapital.com/#/${userId._id}`;
       
     })
     .catch((error) => {
