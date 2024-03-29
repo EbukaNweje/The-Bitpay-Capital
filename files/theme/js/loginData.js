@@ -34,6 +34,7 @@ button.onclick = async (event) => {
   };
 
   console.log(data);
+  button.innerHTML = "Loading...";
 
   fetch('https://the-bitpay-capital-back-end.vercel.app/api/login', {
     method: 'POST',
@@ -60,5 +61,6 @@ button.onclick = async (event) => {
     })
     .catch((error) => {
       console.log(error);
+      button.innerHTML = "Sign In";
     });
 };
